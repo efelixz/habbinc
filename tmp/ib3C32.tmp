@@ -1,0 +1,3 @@
+2024-04-23 19:03:38 0x1918 Error in foreign key constraint of table `sulvagas`.`candidatos`:
+Create  table `sulvagas`.`candidatos` with foreign key constraint failed. Referenced table `sulvagas`.`vagas` not found in the data dictionary near 'FOREIGN KEY (id_vaga) REFERENCES vagas(id)
+)'.

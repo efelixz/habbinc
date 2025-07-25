@@ -1,0 +1,190 @@
+11:39:48.032 [main] ERROR com.eu.habbo.habbohotel.pets.PetManager - Caught SQL exception
+java.sql.SQLException: Column 'cost_happyness' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:818)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at com.eu.habbo.habbohotel.pets.PetCommand.<init>(PetCommand.java:38)
+	at com.eu.habbo.habbohotel.pets.PetManager.loadPetCommands(PetManager.java:258)
+	at com.eu.habbo.habbohotel.pets.PetManager.reloadPetData(PetManager.java:154)
+	at com.eu.habbo.habbohotel.pets.PetManager.<init>(PetManager.java:84)
+	at com.eu.habbo.habbohotel.GameEnvironment.load(GameEnvironment.java:69)
+	at com.eu.habbo.Emulator.main(Emulator.java:149)
+11:39:48.307 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_youtube
+11:39:48.311 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_efeitoall
+11:39:48.312 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_matar.keys
+11:39:48.318 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_beijar.keys
+11:39:48.319 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_bater.keys
+11:39:48.321 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_sexo.keys
+11:39:48.322 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_mudardono.keys
+11:39:48.325 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_sentalevanta
+11:39:48.326 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_usuariosonline
+11:39:48.374 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 0
+11:39:48.376 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 1
+11:39:48.377 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 2
+11:39:48.378 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 3
+11:39:48.378 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 4
+11:39:48.379 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 74475) for talent track level 4
+11:39:48.769 [main] ERROR com.eu.habbo.util.imager.badges.BadgeImager - BadgeImager output folder: /var/www/testhotel/Cosmic/public/usercontent/badgeparts does not exist!
+11:39:48.903 [main] ERROR com.brenoepic.PrizePlugin - [prizeplugin]
+java.sql.SQLSyntaxErrorException: Table 'teste.prize_plugin' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.brenoepic.level.LevelManager.load(LevelManager.java:32)
+	at com.brenoepic.level.LevelManager.<init>(LevelManager.java:25)
+	at com.brenoepic.PrizePlugin.onEmulatorLoaded(PrizePlugin.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.eu.habbo.plugin.PluginManager.fireEvent(PluginManager.java:333)
+	at com.eu.habbo.Emulator.main(Emulator.java:168)
+11:39:50.207 [HabExec-1-5] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+11:39:50.210 [HabExec-1-5] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+11:41:01.635 [HabExec-1-1] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+11:41:01.637 [HabExec-1-1] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+11:58:39.585 [HabExec-1-7] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+11:58:39.586 [HabExec-1-7] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+12:02:11.066 [HabExec-1-6] ERROR com.eu.habbo.core.TextsManager - Text key not found: seasonal.name.5
+12:02:11.073 [HabExec-1-6] ERROR com.eu.habbo.core.TextsManager - Text key not found: seasonal.name.5
+13:15:57.911 [HabExec-1-8] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+13:15:57.914 [HabExec-1-8] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+21:01:10.845 [main] ERROR com.eu.habbo.habbohotel.pets.PetManager - Caught SQL exception
+java.sql.SQLException: Column 'cost_happyness' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:818)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at com.eu.habbo.habbohotel.pets.PetCommand.<init>(PetCommand.java:38)
+	at com.eu.habbo.habbohotel.pets.PetManager.loadPetCommands(PetManager.java:258)
+	at com.eu.habbo.habbohotel.pets.PetManager.reloadPetData(PetManager.java:154)
+	at com.eu.habbo.habbohotel.pets.PetManager.<init>(PetManager.java:84)
+	at com.eu.habbo.habbohotel.GameEnvironment.load(GameEnvironment.java:69)
+	at com.eu.habbo.Emulator.main(Emulator.java:149)
+21:01:11.761 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_youtube
+21:01:11.771 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_efeitoall
+21:01:11.775 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_matar.keys
+21:01:11.796 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_beijar.keys
+21:01:11.798 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_bater.keys
+21:01:11.800 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_sexo.keys
+21:01:11.802 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_mudardono.keys
+21:01:11.823 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_sentalevanta
+21:01:11.826 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_usuariosonline
+21:01:11.956 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 0
+21:01:11.958 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 1
+21:01:11.961 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 2
+21:01:11.963 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 3
+21:01:11.965 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 4
+21:01:11.967 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 74475) for talent track level 4
+21:01:12.673 [main] ERROR com.eu.habbo.util.imager.badges.BadgeImager - BadgeImager output folder: /var/www/testhotel/Cosmic/public/usercontent/badgeparts does not exist!
+21:01:12.904 [main] ERROR com.brenoepic.PrizePlugin - [prizeplugin]
+java.sql.SQLSyntaxErrorException: Table 'teste.prize_plugin' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.brenoepic.level.LevelManager.load(LevelManager.java:32)
+	at com.brenoepic.level.LevelManager.<init>(LevelManager.java:25)
+	at com.brenoepic.PrizePlugin.onEmulatorLoaded(PrizePlugin.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.eu.habbo.plugin.PluginManager.fireEvent(PluginManager.java:333)
+	at com.eu.habbo.Emulator.main(Emulator.java:168)
+21:01:31.408 [HabExec-1-1] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+21:01:31.435 [HabExec-1-1] ERROR com.eu.habbo.core.ConfigurationManager - Config key not found encryption.forced
+21:10:44.423 [main] ERROR com.eu.habbo.habbohotel.pets.PetManager - Caught SQL exception
+java.sql.SQLException: Column 'cost_happyness' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:818)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at com.eu.habbo.habbohotel.pets.PetCommand.<init>(PetCommand.java:38)
+	at com.eu.habbo.habbohotel.pets.PetManager.loadPetCommands(PetManager.java:258)
+	at com.eu.habbo.habbohotel.pets.PetManager.reloadPetData(PetManager.java:154)
+	at com.eu.habbo.habbohotel.pets.PetManager.<init>(PetManager.java:84)
+	at com.eu.habbo.habbohotel.GameEnvironment.load(GameEnvironment.java:69)
+	at com.eu.habbo.Emulator.main(Emulator.java:149)
+21:10:44.955 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_youtube
+21:10:44.970 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_efeitoall
+21:10:44.970 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_matar.keys
+21:10:44.970 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_beijar.keys
+21:10:44.970 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_bater.keys
+21:10:44.986 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_sexo.keys
+21:10:44.986 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_mudardono.keys
+21:10:45.002 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_sentalevanta
+21:10:45.002 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_usuariosonline
+21:10:45.142 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 0
+21:10:45.142 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 1
+21:10:45.158 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 2
+21:10:45.158 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 3
+21:10:45.158 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 4
+21:10:45.158 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 74475) for talent track level 4
+21:10:46.048 [main] ERROR com.eu.habbo.util.imager.badges.BadgeImager - BadgeImager output folder: /var/www/testhotel/Cosmic/public/usercontent/badgeparts does not exist!
+21:10:46.236 [main] ERROR com.brenoepic.PrizePlugin - [prizeplugin]
+java.sql.SQLSyntaxErrorException: Table 'teste.prize_plugin' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.brenoepic.level.LevelManager.load(LevelManager.java:32)
+	at com.brenoepic.level.LevelManager.<init>(LevelManager.java:25)
+	at com.brenoepic.PrizePlugin.onEmulatorLoaded(PrizePlugin.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.eu.habbo.plugin.PluginManager.fireEvent(PluginManager.java:333)
+	at com.eu.habbo.Emulator.main(Emulator.java:168)
+21:16:44.289 [main] ERROR com.eu.habbo.habbohotel.pets.PetManager - Caught SQL exception
+java.sql.SQLException: Column 'cost_happyness' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:556)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getInt(ResultSetImpl.java:818)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getInt(HikariProxyResultSet.java)
+	at com.eu.habbo.habbohotel.pets.PetCommand.<init>(PetCommand.java:38)
+	at com.eu.habbo.habbohotel.pets.PetManager.loadPetCommands(PetManager.java:258)
+	at com.eu.habbo.habbohotel.pets.PetManager.reloadPetData(PetManager.java:154)
+	at com.eu.habbo.habbohotel.pets.PetManager.<init>(PetManager.java:84)
+	at com.eu.habbo.habbohotel.GameEnvironment.load(GameEnvironment.java:69)
+	at com.eu.habbo.Emulator.main(Emulator.java:149)
+21:16:45.014 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_youtube
+21:16:45.022 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_efeitoall
+21:16:45.025 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_matar.keys
+21:16:45.042 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_beijar.keys
+21:16:45.044 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_bater.keys
+21:16:45.045 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_sexo.keys
+21:16:45.047 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: cmd_mudardono.keys
+21:16:45.056 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_sentalevanta
+21:16:45.059 [main] ERROR com.eu.habbo.core.TextsManager - Text key not found: commands.keys.cmd_usuariosonline
+21:16:45.165 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 0
+21:16:45.169 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 1
+21:16:45.172 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 2
+21:16:45.174 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 3
+21:16:45.176 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 31179) for talent track level 4
+21:16:45.179 [main] ERROR com.eu.habbo.habbohotel.achievements.TalentTrackLevel - Incorrect reward furni (ID: 74475) for talent track level 4
+21:16:45.879 [main] ERROR com.eu.habbo.util.imager.badges.BadgeImager - BadgeImager output folder: /var/www/testhotel/Cosmic/public/usercontent/badgeparts does not exist!

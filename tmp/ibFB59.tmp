@@ -1,0 +1,1 @@
+`academicofaet`.`notas_parciais`, CONSTRAINT `notas_parciais_ibfk_2` FOREIGN KEY (`atividade_id`) REFERENCES `atividades` (`id`)

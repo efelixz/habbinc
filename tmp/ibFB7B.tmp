@@ -1,0 +1,22 @@
+2024-04-17 18:22:48 0x20e0 Transaction:
+TRANSACTION 15509, ACTIVE 0 sec inserting
+mysql tables in use 1, locked 1
+5 lock struct(s), heap size 1128, 2 row lock(s), undo log entries 1
+MySQL thread id 1722, OS thread handle 8416, query id 55317 localhost ::1 root Update
+INSERT INTO boletim (aluno_id, disciplina_id, nota, falta) VALUES (?, ?, ?, ?)
+Foreign key constraint fails for table `academicofaet`.`boletim`:
+,
+  CONSTRAINT `boletim_ibfk_2` FOREIGN KEY (`disciplina_id`) REFERENCES `disciplinas` (`id`) in parent table, in index disciplina_id tuple:
+DATA TUPLE: 2 fields;
+ 0: len 4; hex 80000003; asc     ;;
+ 1: len 4; hex 80000002; asc     ;;
+
+But in parent table `academicofaet`.`disciplinas`, in index PRIMARY,
+the closest match we can find is record:
+PHYSICAL RECORD: n_fields 5; compact format; info bits 0
+ 0: len 4; hex 80000002; asc     ;;
+ 1: len 6; hex 000000000000; asc       ;;
+ 2: len 7; hex 80000000000000; asc        ;;
+ 3: len 5; hex 7465737465; asc teste;;
+ 4: len 2; hex 3132; asc 12;;
+
