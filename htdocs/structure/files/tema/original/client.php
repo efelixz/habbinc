@@ -83,3 +83,12 @@ header('Content-Type: text/html; charset=utf-8');
 <script src="//cdn.comprahabbo.com/structure//files/tema/original/game/push.js"></script>
   </body>
 </html>
+<!-- Ao invés de: -->
+<script src="http://cdn.comprahabbo.com/v2/assets/vendor-48792d42.js"></script>
+<script src="http://cdn.comprahabbo.com/v2/assets/index-34d8c395.js"></script>
+<script src="http://cdn.comprahabbo.com/v2/assets/nitro-renderer-493a6bde.js"></script>
+
+<!-- Use: -->
+<script type="module" src="http://cdn.comprahabbo.com/v2/assets/vendor-48792d42.js"></script>
+<script type="module" src="http://cdn.comprahabbo.com/v2/assets/index-34d8c395.js"></script>
+<script type="module" src="http://cdn.comprahabbo.com/v2/assets/nitro-renderer-493a6bde.js"></script>
