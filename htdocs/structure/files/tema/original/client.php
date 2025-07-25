@@ -59,8 +59,8 @@ header('Content-Type: text/html; charset=utf-8');
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-48792d42.js">
     <link rel="modulepreload" crossorigin href="/assets/nitro-renderer-493a6bde.js">
-    <!-- Usar CSS local ao invés do CDN -->
-    <link rel="stylesheet" href="/assets/index.css">
+    <link rel="stylesheet" href="//cdn.comprahabbo.com/v2/src/assets/index.css">
+    <link rel="stylesheet" href="//comprahabbo.com/api/css/yt.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -74,13 +74,12 @@ header('Content-Type: text/html; charset=utf-8');
         "friend.id": (new URLSearchParams(window.location.search).get('friend') || 0),
       };
     </script>
-    <!-- Usar apenas recursos locais -->
+    <!-- Carregamento correto dos módulos ES6 -->
     <script type="module" crossorigin src="/assets/vendor-48792d42.js"></script>
     <script type="module" crossorigin src="/assets/nitro-renderer-493a6bde.js"></script>
     <script type="module" crossorigin src="/assets/index-34d8c395.js"></script>
-    <!-- Scripts locais ou com CORS adequado -->
-    <script src="/assets/yt.js"></script>
-    <script src="/assets/push.js"></script>
+    <script src="//comprahabbo.com/api/js/yt.js"></script>
+    <script src="//cdn.comprahabbo.com/structure//files/tema/original/game/push.js"></script>
   </body>
 </html>
 <!-- Ao invés de: -->
