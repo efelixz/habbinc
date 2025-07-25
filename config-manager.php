@@ -7,7 +7,7 @@
 class ConfigManager {
     private $environments = [
         'LOCAL' => [
-            'DB_HOST' => 'localhost',
+            'DB_HOST' => 'localhost',  // Sempre localhost
             'GAME_HOST' => 'localhost', 
             'RCON_HOST' => '127.0.0.1',
             'SITE_URL' => 'http://localhost',
@@ -17,7 +17,7 @@ class ConfigManager {
             'UI_CONFIG_URL' => 'http://localhost/ui-config.json'
         ],
         'ONLINE' => [
-            'DB_HOST' => '190.102.40.98',
+            'DB_HOST' => 'localhost',  // MANTÉM localhost para banco
             'GAME_HOST' => '190.102.40.98',
             'RCON_HOST' => '190.102.40.98', 
             'SITE_URL' => 'http://190.102.40.98',
@@ -93,12 +93,14 @@ class ConfigManager {
         if (!file_exists($file)) return;
         
         $content = file_get_contents($file);
-        $content = preg_replace('/db\.hostname\s*=\s*.+/', "db.hostname={$config['DB_HOST']}", $content);
+        // Banco sempre localhost
+        $content = preg_replace('/db\.hostname\s*=\s*.+/', "db.hostname=localhost", $content);
+        // Apenas game.host e rcon.host mudam
         $content = preg_replace('/game\.host\s*=\s*.+/', "game.host={$config['GAME_HOST']}", $content);
         $content = preg_replace('/rcon\.host\s*=\s*.+/', "rcon.host={$config['RCON_HOST']}", $content);
         
         file_put_contents($file, $content);
-        echo "✅ Atualizado: $file\n";
+        echo "✅ Atualizado: $file (DB mantido em localhost)\n";
     }
     
     private function updateArcConfig($config) {
@@ -106,15 +108,19 @@ class ConfigManager {
         if (!file_exists($file)) return;
         
         $content = file_get_contents($file);
-        $content = preg_replace('/database_hostname\s*=\s*"[^"]+"/', "database_hostname = \"{$config['DB_HOST']}\"", $content);
+        // Banco sempre localhost
+        $content = preg_replace('/database_hostname\s*=\s*"[^"]+"/', "database_hostname = \"localhost\"", $content);
+        // URLs mudam conforme ambiente
         $content = preg_replace('/site\.url\s*=\s*"[^"]+"/', "site.url = \"{$config['SITE_URL']}\"", $content);
         $content = preg_replace('/connection\.info\.host\s*=\s*"[^"]+"/', "connection.info.host = \"{$config['GAME_HOST']}\"", $content);
         
         // Atualizar outras URLs
-        $content = str_replace('http://localhost', $config['SITE_URL'], $content);
+        if ($config['SITE_URL'] !== 'http://localhost') {
+            $content = str_replace('http://localhost', $config['SITE_URL'], $content);
+        }
         
         file_put_contents($file, $content);
-        echo "✅ Atualizado: $file\n";
+        echo "✅ Atualizado: $file (DB mantido em localhost)\n";
     }
     
     private function updateRendererConfigs($config) {
@@ -175,14 +181,15 @@ class ConfigManager {
             if (!file_exists($file)) continue;
             
             $content = file_get_contents($file);
+            // Força conexão sempre para localhost
             $content = preg_replace(
-                "/new mysqli\s*\(\s*['\"]localhost['\"]/",
-                "new mysqli('{$config['DB_HOST']}'",
+                "/new mysqli\s*\(\s*['\"][^'\"]*['\"]/",
+                "new mysqli('localhost'",
                 $content
             );
             
             file_put_contents($file, $content);
-            echo "✅ Atualizado: $file\n";
+            echo "✅ Atualizado: $file (DB mantido em localhost)\n";
         }
     }
     
