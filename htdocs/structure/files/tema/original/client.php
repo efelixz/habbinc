@@ -57,8 +57,6 @@ header('Content-Type: text/html; charset=utf-8');
     <base href="./">
     <title>Habbinc - jogar</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="//comprahabbo.com/api/js/yt.js"></script>
-    <script type="module" crossorigin src="/assets/index-34d8c395.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-48792d42.js">
     <link rel="modulepreload" crossorigin href="/assets/nitro-renderer-493a6bde.js">
     <link rel="stylesheet" href="//cdn.comprahabbo.com/v2/src/assets/index.css">
@@ -76,11 +74,12 @@ header('Content-Type: text/html; charset=utf-8');
         "friend.id": (new URLSearchParams(window.location.search).get('friend') || 0),
       };
     </script>
-    <script src="/assets/vendor-48792d42.js"></script>
-    <script src="/assets/nitro-renderer-493a6bde.js"></script>
-  </body>
-</html>
-<script src="//cdn.comprahabbo.com/structure//files/tema/original/game/push.js"></script>
+    <!-- Carregamento correto dos módulos ES6 -->
+    <script type="module" crossorigin src="/assets/vendor-48792d42.js"></script>
+    <script type="module" crossorigin src="/assets/nitro-renderer-493a6bde.js"></script>
+    <script type="module" crossorigin src="/assets/index-34d8c395.js"></script>
+    <script src="//comprahabbo.com/api/js/yt.js"></script>
+    <script src="//cdn.comprahabbo.com/structure//files/tema/original/game/push.js"></script>
   </body>
 </html>
 <!-- Ao invés de: -->
