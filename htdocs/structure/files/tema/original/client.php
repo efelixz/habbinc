@@ -53,35 +53,33 @@ header('Content-Type: text/html; charset=utf-8');
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-capable" content="yes">
-   
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <base href="./">
     <title>Habbinc - jogar</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="//comprahabbo.com/api/js/yt.js"></script>
-    <script type="module" crossorigin src="//cdn.comprahabbo.com/v2/assets/index-34d8c395.js?"></script>
-    <link rel="modulepreload" crossorigin href="//cdn.comprahabbo.com/v2/assets/vendor-48792d42.js?">
-    <link rel="modulepreload" crossorigin href="//cdn.comprahabbo.com/v2/assets/nitro-renderer-493a6bde.js?">
-    <link rel="stylesheet" href="//cdn.comprahabbo.com/v2/src/assets/index.css?">
-
-    <link rel="stylesheet" href="//comprahabbo.com/api/css/yt.css?">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//comprahabbo.com/api/js/yt.js"></script>
+    <script type="module" crossorigin src="/assets/index-34d8c395.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-48792d42.js">
+    <link rel="modulepreload" crossorigin href="/assets/nitro-renderer-493a6bde.js">
+    <link rel="stylesheet" href="//cdn.comprahabbo.com/v2/src/assets/index.css">
+    <link rel="stylesheet" href="//comprahabbo.com/api/css/yt.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" class="w-100 h-100"></div>
     <script>
       const NitroConfig = {
-        "config.urls": [ 'http://localhost/renderer-config.json?<?php echo time() ?>', 'http://localhost/ui-config.json?<?php echo time() ?>' ],
+        "config.urls": [ 'http://190.102.40.98/renderer-config.json?<?php echo time() ?>', 'http://190.102.40.98/ui-config.json?<?php echo time() ?>' ],
         "sso.ticket": "<?= $sessionKey; ?>",
         "forward.type": (new URLSearchParams(window.location.search).get('room') ? 2 : -1),
         "forward.id": (new URLSearchParams(window.location.search).get('room') || 0),
         "friend.id": (new URLSearchParams(window.location.search).get('friend') || 0),
       };
     </script>
-
-
-     
-
- <script src="//cdn.comprahabbo.com/structure//files/tema/original/game/push.js"></script>
+    <script src="/assets/vendor-48792d42.js"></script>
+    <script src="/assets/nitro-renderer-493a6bde.js"></script>
+  </body>
+</html>
+<script src="//cdn.comprahabbo.com/structure//files/tema/original/game/push.js"></script>
   </body>
 </html>
