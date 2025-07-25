@@ -71,7 +71,7 @@ header('Content-Type: text/html; charset=utf-8');
     <div id="root" class="w-100 h-100"></div>
     <script>
       const NitroConfig = {
-        "config.urls": [ 'http://190.102.40.98/renderer-config.json?<?php echo time() ?>', 'http://190.102.40.98/ui-config.json?<?php echo time() ?>' ],
+        "config.urls": [ 'http://localhost/renderer-config.json?<?php echo time() ?>', 'http://localhost/ui-config.json?<?php echo time() ?>' ],
         "sso.ticket": "<?= $sessionKey; ?>",
         "forward.type": (new URLSearchParams(window.location.search).get('room') ? 2 : -1),
         "forward.id": (new URLSearchParams(window.location.search).get('room') || 0),
